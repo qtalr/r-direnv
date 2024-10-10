@@ -13,16 +13,15 @@
 
         packages = with pkgs; [
           direnv
-          R
-          radianWrapper
           pandoc
           quarto
+          R
+          radianWrapper
         ];
 
         rPackages = with pkgs.rPackages; [
-          dplyr
-          stringr
-          languageserver # Add the languageserver package for R LSP
+          languageserver
+          tidyverse
           tinytex
         ];
 
