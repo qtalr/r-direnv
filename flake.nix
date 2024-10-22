@@ -37,10 +37,6 @@
       {
         devShell = pkgs.mkShell {
           buildInputs = allPackages;
-
-          shellHook = ''
-            echo "Activating R development environment..."
-          '';
         };
       });
 }
